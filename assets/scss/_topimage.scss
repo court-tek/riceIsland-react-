@@ -1,0 +1,56 @@
+#topImg {
+  position: relative;
+  background: black;
+  height: 550px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 00, #000 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 0px, rgb(0, 0, 0) 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, -0.6) 0, #000 100%), url("https://raw.githubusercontent.com/court-tek/myWebFiles/master/caribFood.jpg");
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  
+
+  .title {
+    padding: 200px 0 30px;
+    text-align: right;
+
+    h1 {
+      font-family: "Rozha One", serif;
+      text-decoration: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 4rem;
+
+      h5 {
+        text-align: right;
+        text-decoration: uppercase;
+        color: white;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .contact-info {
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    text-align: right;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+
+    strong {
+      font-weight: 700;
+    }
+
+    .booking {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 33px;
+    }
+  }
+}

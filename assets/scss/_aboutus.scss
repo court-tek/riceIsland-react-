@@ -1,0 +1,11 @@
+#aboutus {
+  .container {
+    display: flex;
+    .owner-image {
+      margin-right: 40px;
+    }
+    p {
+      margin: 70px 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+h2 {
+  font-family: "Rozha One", serif;
+  font-size: 3rem;
+  margin: 0.5rem 0 1.5rem;
+  text-decoration: capitalize;
+}
+
+h5 {
+  color: grey;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+// a {
+//   transition: all 0.5s ease-in-out;
+//   &:hover {
+//     color: red;
+//   }
+// }
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  font-size: 0.8rem;
+  color: grey;
+  line-height: 2;
+  margin: 0.5rem 0 3rem;
+}
+
+.special {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Flex Footer */
+
+
+.Site {
+    min-height: 100vh;
+}
+
+.Site-content {
+    min-height: calc(100vh - 200px);
+}

@@ -1,0 +1,48 @@
+#contactus {
+  padding: 100px 0;
+  background: #F4F6F9;
+
+  h2,
+  h5 {
+    text-align: center;
+  }
+
+  .box {
+    padding: 70px;
+    background: #fff;
+
+    .title {
+      font-family: "Rozha One" sans-serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #202020;
+      line-height: 1.7;
+    }
+
+    p {
+      font-weight: 400;
+      margin-bottom: 20px;
+
+      strong {
+        color: #202020;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+
+      a {
+        color: #ADADAD;
+        text-decoration: none;
+
+        &:hover {
+          color: #911A20;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

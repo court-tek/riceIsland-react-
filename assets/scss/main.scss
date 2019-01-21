@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Sans:400,700|Rozha+One");
+@import "reset"; /* El Grid  */
+@import "grid12"; /* Components */
+@import "variables"; /* Components */
+@import "mixins/mixins";
+@import "global";
+@import "header";
+@import "topimage";
+@import "ourstory";
+@import "specialmenu";
+@import "randomquote";
+@import "reviews";
+@import "contactus";
+@import "aboutus";
+@import "menulist";
+@import "modal";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/* ###### Media Queries ###### */
+/* #### Tablet #### */
+@media only screen and (max-width: 960px) {}
+/* #### Handset #### */
+@media only screen and (max-width: 600px) {
+  /* header */
+  .container {
+    width: 100%;
+  }
+
+  #topImg .contact-info .hours {
+    font-size: 13px;
+  }
+  /* Header ends */
+  /* ourStory */
+  #ourStory .quote-our h2 {
+    text-align: center;
+  }
+
+  #ourStory .quote-our .reservBtn {
+    text-align: center;
+    margin: 0 auto 16px;
+  }
+
+  #ourStory .quote-our .reservBtn a {
+    width: 100%;
+  }
+  /* ourStory ends */
+  /* Menu list starts */
+  #menulist .container {
+    flex-direction: column-reverse;
+
+    .tool {
+      padding: 35px 0;
+    }
+  }
+  /* Menu list ends */
+  /* About us start */
+  #aboutus {
+    .container {
+      flex-direction: column;
+      // align-items: center;
+    }
+  }
+  /* About us ends */
+  /* Footer */
+  footer {
+    padding: 40px 0 0 30px;
+
+    nav {
+      margin: 0;
+
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .social-media {
+      margin: 0 18px 0 0;
+    }
+  }
+  /* Footer ends */
+}
