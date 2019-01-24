@@ -1,48 +1,32 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class Reviews extends Component {
   constructor() {
     super();
     this.state = {
-      reviews: []
+      reviewStatus: {
+        currentReview: 1
+      }
     };
   }
 
-  componentDidMount() {
-    axios.get("/api/reviews").then(res => {
-      this.setState({
-          reviews: res.data
-        },() => {
-          console.log(this.state);
-        }
-      );
-    });
-  }
-
   currentReview() {
+    const { reviewStatus } = this.state;
+    const { reviewData } = this.props;
+    console.log(reviewData);
     return (
       <div>
         <h5 className="comp-title">Reviews</h5>
-        <h2>The Food Network</h2>
-        <h4>Best Restaurant in the N.Y. Area</h4>
-        <p>
-          Lorem ipsum dolor amet mollit schlitz hammock, street art shabby chic
-          shaman taiyaki man bun brunch exercitation quis. Cred adipisicing swag
-          selvage everyday carry bushwick poutine art party deep v mlkshk
-          voluptate occupy. Anim beard meh proident ugh sed voluptate tilde
-          hashtag wolf scenester affogato sunt magna irure. Occaecat do tumeric
-          chillwave, shabby chic copper mug nulla edison bulb labore next level
-          pitchfork la croix minim vice poutine. Kogi anim tilde roof party pork
-          belly. Tousled in yr, schlitz palo santo street art bushwick laborum
-          post-ironic culpa next level XOXO portland.
-        </p>
+        <h2>{reviewData[reviewStatus.currentReview].company}</h2>
+        <h4>"{reviewData[reviewStatus.currentReview].highlight}"</h4>
+        <p>{reviewData[reviewStatus.currentReview].review}</p>
         <div className="author">
-          <strong>Joe Bastiachi</strong> - <em>winner of the chef masters</em>
+          <strong>{reviewData[reviewStatus.currentReview].author}</strong> - <em>{reviewData[reviewStatus.currentReview].authorInfo}</em>
         </div>
       </div>
     );
   }
+  
   render() {
     return (
       <section id="reviews">
@@ -54,6 +38,7 @@ class Reviews extends Component {
               </div>
             </div>
             <div className="col-md-4">
+              {this.currentReview()}
               <div className="arrows">
                 <i className="fas fa-arrow-left" />
                 <i className="fas fa-arrow-right ready" />

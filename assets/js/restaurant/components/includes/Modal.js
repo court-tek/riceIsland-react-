@@ -19,6 +19,9 @@ export default class Modal extends Component {
                 <div onClick={this.props.hideIt} className="menu-toggle">
                     <div className="hamburger" />
                 </div>
+                <div>
+                    <p>This is the Menu section!</p>
+                </div>
             </section>
         );
     }
