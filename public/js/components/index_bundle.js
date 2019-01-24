@@ -15218,11 +15218,26 @@ var Modal = function (_Component) {
                 ),
                 _react2.default.createElement(
                     "div",
-                    null,
+                    { className: "menu-container" },
                     _react2.default.createElement(
-                        "p",
-                        null,
-                        "This is the Menu section!"
+                        "div",
+                        { className: "menu-title" },
+                        _react2.default.createElement(
+                            "h1",
+                            null,
+                            "Food Menu"
+                        ),
+                        _react2.default.createElement("i", { className: "fas fa-utensils" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "food-menu" },
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "This is where the food options go."
+                        ),
+                        _react2.default.createElement("i", { className: "fas fa-beer" })
                     )
                 )
             );
