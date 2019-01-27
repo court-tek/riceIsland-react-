@@ -8,13 +8,17 @@
     font-size: 40px;
     cursor: pointer;
   }
-  .foodMenu-title {
+  .foodMenu-title-section {
+    position: relative;
     color: #111;
     background: purple;
   }
   .foodMenu {
     color: #111;
     background: orange;
+  }
+  .closeNext {
+    position: relative;
   }
   .menu-toggle {
     padding: 1em;
@@ -40,5 +44,26 @@
 
   .menu-toggle .hamburger::after {
     transform: rotate(-90deg);
+  }
+  // pentagon
+  #circle {
+    margin-top: 60px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px #202020 solid;
+    border-radius: 50%;
+
+    .fa-utensils {
+      position: absolute;
+      right: 32px;
+      top: 28px;
+    }
+    .fa-beer {
+      position: absolute;
+      right: 28px;
+    }
   }
 }

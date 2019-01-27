@@ -1164,12 +1164,15 @@ header ul li {
   .menu-container .fas {
     font-size: 40px;
     cursor: pointer; }
-  .menu-container .foodMenu-title {
+  .menu-container .foodMenu-title-section {
+    position: relative;
     color: #111;
     background: purple; }
   .menu-container .foodMenu {
     color: #111;
     background: orange; }
+  .menu-container .closeNext {
+    position: relative; }
   .menu-container .menu-toggle {
     padding: 1em;
     position: absolute;
@@ -1188,6 +1191,22 @@ header ul li {
     transform: rotate(45deg); }
   .menu-container .menu-toggle .hamburger::after {
     transform: rotate(-90deg); }
+  .menu-container #circle {
+    margin-top: 60px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px #202020 solid;
+    border-radius: 50%; }
+    .menu-container #circle .fa-utensils {
+      position: absolute;
+      right: 32px;
+      top: 28px; }
+    .menu-container #circle .fa-beer {
+      position: absolute;
+      right: 28px; }
 
 footer {
   padding: 100px 0;

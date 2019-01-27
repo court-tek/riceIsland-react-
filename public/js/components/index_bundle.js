@@ -14435,19 +14435,13 @@ var Menu = function (_Component) {
       });
     }
   }, {
-    key: "xThat",
-    value: function xThat() {
-      if (this.props.show = false) {
-        setState({
-          showMenu: true
-        });
-      }
-    }
-  }, {
     key: "menuToggle",
     value: function menuToggle() {
       var showMenu = this.state.showMenu;
 
+      var posfixed = {
+        position: 'fixed'
+      };
       switch (showMenu) {
         case true:
           return _react2.default.createElement(
@@ -14455,15 +14449,15 @@ var Menu = function (_Component) {
             { className: "menu-container" },
             _react2.default.createElement(
               "div",
-              { className: "foodMenu-title" },
+              { className: "foodMenu-title-section" },
               _react2.default.createElement(
                 "h1",
-                null,
+                { style: posfixed },
                 "MenuFood"
               ),
               _react2.default.createElement(
                 "div",
-                null,
+                { style: posfixed, id: "circle" },
                 _react2.default.createElement("i", { className: "fas fa-utensils" })
               )
             ),
@@ -14471,9 +14465,99 @@ var Menu = function (_Component) {
               "div",
               { className: "foodMenu" },
               _react2.default.createElement(
-                "h1",
-                null,
-                "This is where the food options are."
+                "div",
+                { className: "menu-section" },
+                _react2.default.createElement(
+                  "h2",
+                  { className: "section-title" },
+                  "Entrees"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  { className: "section-description" },
+                  "Pumkin & Channa Curry",
+                  _react2.default.createElement(
+                    "span",
+                    null,
+                    "$10.00"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "menu-section" },
+                _react2.default.createElement(
+                  "h2",
+                  { className: "section-title" },
+                  "Small Bites"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  { className: "section-description" },
+                  "Pumkin & Channa Curry",
+                  _react2.default.createElement(
+                    "span",
+                    null,
+                    "$10.00"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "menu-section" },
+                _react2.default.createElement(
+                  "h2",
+                  { className: "section-title" },
+                  "Sides"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  { className: "section-description" },
+                  "Pumkin & Channa Curry",
+                  _react2.default.createElement(
+                    "span",
+                    null,
+                    "$10.00"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "menu-section" },
+                _react2.default.createElement(
+                  "h2",
+                  { className: "section-title" },
+                  "Sandwiches"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  { className: "section-description" },
+                  "Pumkin & Channa Curry",
+                  _react2.default.createElement(
+                    "span",
+                    null,
+                    "$10.00"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "menu-section" },
+                _react2.default.createElement(
+                  "h2",
+                  { className: "section-title" },
+                  "Lunch"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  { className: "section-description" },
+                  "Pumkin & Channa Curry",
+                  _react2.default.createElement(
+                    "span",
+                    null,
+                    "$10.00"
+                  )
+                )
               )
             ),
             _react2.default.createElement(
@@ -14481,12 +14565,12 @@ var Menu = function (_Component) {
               { className: "closeNext" },
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
+                { style: posfixed, onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
                 _react2.default.createElement("div", { className: "hamburger" })
               ),
               _react2.default.createElement(
                 "div",
-                { onClick: this.beerMug },
+                { id: "circle", style: { position: 'fixed' }, onClick: this.beerMug },
                 _react2.default.createElement("i", { className: "fas fa-beer" })
               )
             )
@@ -14505,8 +14589,8 @@ var Menu = function (_Component) {
               ),
               _react2.default.createElement(
                 "div",
-                null,
-                _react2.default.createElement("i", { onClick: this.forkAndSpoon, className: "fas fa-utensils" })
+                { style: posfixed, onClick: this.forkAndSpoon, id: "circle" },
+                _react2.default.createElement("i", { className: "fas fa-utensils" })
               )
             ),
             _react2.default.createElement(
