@@ -1153,80 +1153,41 @@ header ul li {
         margin: 15px 0;
         cursor: pointer; }
 
-.modal {
-  background: #fff;
-  position: absolute;
-  color: #fff;
-  z-index: 100;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 100px 0; }
-
-.modal-open {
-  overflow: hidden; }
-
-.menu-toggle {
-  padding: 1em;
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  cursor: pointer; }
-
-.menu-toggle .hamburger, .hamburger::after {
-  content: '';
-  display: block;
-  border-radius: 3px;
-  background: #111;
-  height: 3px;
-  width: 1.75em; }
-
-.menu-toggle .hamburger {
-  transform: rotate(45deg); }
-
-.menu-toggle .hamburger::after {
-  transform: rotate(-90deg); }
-
-.modal form {
-  display: block;
-  max-width: 500px;
-  margin: 0 auto;
-  transition: all 10s ease-in-out; }
-
-.modal form .form-group {
-  margin-bottom: 20px; }
-
-.modal form label {
-  display: block;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 300; }
-
-.modal input[type="text"], textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  font-size: 30px;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
-
-.modal input:focus, textarea:focus {
-  outline: none; }
-
-.modal button {
-  background: #25B3EC;
-  padding: 15px 20px;
-  border: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff;
-  width: 100%; }
-
-.display-block {
-  display: block; }
-
-.display-none {
-  display: none; }
+.menu-container {
+  display: -ms-grid;
+  display: grid;
+  z-index: 101;
+  background: #ccc;
+  height: 100vh;
+  -ms-grid-columns: 275px 3fr 150px;
+      grid-template-columns: 275px 3fr 150px; }
+  .menu-container .fas {
+    font-size: 40px;
+    cursor: pointer; }
+  .menu-container .foodMenu-title {
+    color: #111;
+    background: purple; }
+  .menu-container .foodMenu {
+    color: #111;
+    background: orange; }
+  .menu-container .menu-toggle {
+    padding: 1em;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer; }
+  .menu-container .menu-toggle .hamburger,
+  .menu-container .hamburger::after {
+    content: "";
+    display: block;
+    border-radius: 3px;
+    background: #111;
+    height: 3px;
+    width: 1.75em; }
+  .menu-container .menu-toggle .hamburger {
+    transform: rotate(45deg); }
+  .menu-container .menu-toggle .hamburger::after {
+    transform: rotate(-90deg); }
 
 footer {
   padding: 100px 0;

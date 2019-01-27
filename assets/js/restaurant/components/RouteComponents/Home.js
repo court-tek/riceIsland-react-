@@ -6,6 +6,8 @@ import Reviews from "../Reviews";
 import ContactUs from "../ContactUs";
 import SpecialMenu from "../SpecialMenu";
 import Footer from "../Footer";
+import Navigation from "../Navigation";
+
 
 let fakeServerData = [
   {
@@ -56,6 +58,7 @@ class Home extends Component {
 
     return (
       <div>
+        <Navigation />
         <TopImage />
         <OurStory />
         <section id="specialMenu">
