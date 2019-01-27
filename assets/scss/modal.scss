@@ -3,7 +3,7 @@
   z-index: 101;
   background: #ccc;
   height: 100vh;
-  grid-template-columns: 275px 3fr 150px;
+  grid-template-columns: 275px 2fr 230px;
   .fas {
     font-size: 40px;
     cursor: pointer;
@@ -11,7 +11,36 @@
   .foodMenu-title-section {
     position: relative;
     color: #111;
-    background: purple;
+    background: url('https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // margin-top: 60px;
+    // padding: 20px;
+    text-align: center;
+      .inner-container {
+        padding: 40px 0;
+        .menTitle {
+          position: relative;
+          position: fixed;
+          left: 60px;
+          color: #fff;
+          font-size: 30px;
+          font-weight: 700;
+          .food,
+          .drinks {
+            position: absolute;
+            font-size: 18px;
+            top: 2px;
+            color: rgba(255,255,255,0.7);
+          }
+        }
+      }
+    }
+    .foodMenu {
+      padding: 50px;
+    }
   }
   .foodMenu {
     color: #111;
@@ -45,25 +74,63 @@
   .menu-toggle .hamburger::after {
     transform: rotate(-90deg);
   }
-  // pentagon
-  #circle {
-    margin-top: 60px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    background: transparent;
-    border: 2px #202020 solid;
-    border-radius: 50%;
-
-    .fa-utensils {
-      position: absolute;
-      right: 32px;
-      top: 28px;
+  // Circle
+  .pos {
+    position: absolute;
+    right: 180px;
+    top: 170px;
+    .foodCircle {
+      border: 5px rgba(255,255,255,0.7) solid;
     }
-    .fa-beer {
-      position: absolute;
-      right: 28px;
+    .foodCircleB {
+      border: 5px #202020 solid;
+      transition: all .3s ease-in-out;
+      &:hover {
+        border: 5px rgba(0,0,0,0.4) solid;
+      }
+    }
+
+    .foodCircleTrans {
+      border: 5px #fff solid;
+      transition: all .3s ease-in-out;
+      &:hover {
+        border: 5px rgba(255,255,255, 0.7) solid;
+      }
+    }
+
+    #circle {
+      margin-top: 60px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      background: transparent;
+      border-radius: 50%;
+
+      .fa-utensils {
+        position: absolute;
+        right: 29px;
+        top: 28px;
+      }
+      .foodUtensils {
+        color: #fff;
+        transition: all .3s ease-in-out;
+        &:hover {
+          color: rgba(255,255,255,0.9)
+        }
+      }
+      .changeW {
+        color: rgba(255,255,255,0.7);
+      }
+      .changeB {
+        &:hover {
+          color: rgba(0,0,0,0.4);
+        }
+      }
+      .fa-beer {
+        position: absolute;
+        right: 26px;
+        top: 28px;
+      }
     }
   }
-}

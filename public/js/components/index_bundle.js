@@ -14451,14 +14451,27 @@ var Menu = function (_Component) {
               "div",
               { className: "foodMenu-title-section" },
               _react2.default.createElement(
-                "h1",
-                { style: posfixed },
-                "MenuFood"
-              ),
-              _react2.default.createElement(
-                "div",
-                { style: posfixed, id: "circle" },
-                _react2.default.createElement("i", { className: "fas fa-utensils" })
+                "section",
+                { className: "inner-container" },
+                _react2.default.createElement(
+                  "h1",
+                  { className: "menTitle" },
+                  "MENU",
+                  _react2.default.createElement(
+                    "span",
+                    { className: "food" },
+                    "Food"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "pos" },
+                  _react2.default.createElement(
+                    "div",
+                    { style: posfixed, className: "foodCircle", id: "circle" },
+                    _react2.default.createElement("i", { className: "fas fa-utensils changeW" })
+                  )
+                )
               )
             ),
             _react2.default.createElement(
@@ -14570,8 +14583,16 @@ var Menu = function (_Component) {
               ),
               _react2.default.createElement(
                 "div",
-                { id: "circle", style: { position: 'fixed' }, onClick: this.beerMug },
-                _react2.default.createElement("i", { className: "fas fa-beer" })
+                { className: "position-box" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "pos" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "foodCircleB", id: "circle", style: { position: 'fixed' }, onClick: this.beerMug },
+                    _react2.default.createElement("i", { className: "fas fa-beer changeB" })
+                  )
+                )
               )
             )
           );
@@ -14581,16 +14602,29 @@ var Menu = function (_Component) {
             { className: "menu-container" },
             _react2.default.createElement(
               "div",
-              { className: "foodMenu-title" },
+              { className: "foodMenu-title-section" },
               _react2.default.createElement(
-                "h1",
-                null,
-                "MenuDrinks"
-              ),
-              _react2.default.createElement(
-                "div",
-                { style: posfixed, onClick: this.forkAndSpoon, id: "circle" },
-                _react2.default.createElement("i", { className: "fas fa-utensils" })
+                "section",
+                { className: "inner-container" },
+                _react2.default.createElement(
+                  "h1",
+                  { className: "menTitle" },
+                  "MENU",
+                  _react2.default.createElement(
+                    "span",
+                    { className: "drinks" },
+                    "Drinks"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "pos" },
+                  _react2.default.createElement(
+                    "div",
+                    { style: posfixed, onClick: this.forkAndSpoon, className: "foodCircleTrans", id: "circle" },
+                    _react2.default.createElement("i", { className: "fas fa-utensils foodUtensils" })
+                  )
+                )
               )
             ),
             _react2.default.createElement(
@@ -14610,7 +14644,7 @@ var Menu = function (_Component) {
                 { onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
                 _react2.default.createElement("div", { className: "hamburger" })
               ),
-              _react2.default.createElement("div", { onClick: this.beerMug })
+              _react2.default.createElement("div", null)
             )
           );
       }

@@ -1159,54 +1159,105 @@ header ul li {
   z-index: 101;
   background: #ccc;
   height: 100vh;
-  -ms-grid-columns: 275px 3fr 150px;
-      grid-template-columns: 275px 3fr 150px; }
+  -ms-grid-columns: 275px 2fr 230px;
+      grid-template-columns: 275px 2fr 230px; }
   .menu-container .fas {
     font-size: 40px;
     cursor: pointer; }
   .menu-container .foodMenu-title-section {
     position: relative;
     color: #111;
-    background: purple; }
+    background: url("https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center; }
+    .menu-container .foodMenu-title-section .inner-container {
+      padding: 40px 0; }
+      .menu-container .foodMenu-title-section .inner-container .menTitle {
+        position: relative;
+        position: fixed;
+        left: 60px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700; }
+        .menu-container .foodMenu-title-section .inner-container .menTitle .food,
+        .menu-container .foodMenu-title-section .inner-container .menTitle .drinks {
+          position: absolute;
+          font-size: 18px;
+          top: 2px;
+          color: rgba(255, 255, 255, 0.7); }
   .menu-container .foodMenu {
-    color: #111;
-    background: orange; }
-  .menu-container .closeNext {
-    position: relative; }
-  .menu-container .menu-toggle {
-    padding: 1em;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    cursor: pointer; }
-  .menu-container .menu-toggle .hamburger,
-  .menu-container .hamburger::after {
-    content: "";
-    display: block;
-    border-radius: 3px;
-    background: #111;
-    height: 3px;
-    width: 1.75em; }
-  .menu-container .menu-toggle .hamburger {
-    transform: rotate(45deg); }
-  .menu-container .menu-toggle .hamburger::after {
-    transform: rotate(-90deg); }
-  .menu-container #circle {
+    padding: 50px; }
+
+.foodMenu {
+  color: #111;
+  background: orange; }
+
+.closeNext {
+  position: relative; }
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer; }
+
+.menu-toggle .hamburger,
+.hamburger::after {
+  content: "";
+  display: block;
+  border-radius: 3px;
+  background: #111;
+  height: 3px;
+  width: 1.75em; }
+
+.menu-toggle .hamburger {
+  transform: rotate(45deg); }
+
+.menu-toggle .hamburger::after {
+  transform: rotate(-90deg); }
+
+.pos {
+  position: absolute;
+  right: 180px;
+  top: 170px; }
+  .pos .foodCircle {
+    border: 5px rgba(255, 255, 255, 0.7) solid; }
+  .pos .foodCircleB {
+    border: 5px #202020 solid;
+    transition: all .3s ease-in-out; }
+    .pos .foodCircleB:hover {
+      border: 5px rgba(0, 0, 0, 0.4) solid; }
+  .pos .foodCircleTrans {
+    border: 5px #fff solid;
+    transition: all .3s ease-in-out; }
+    .pos .foodCircleTrans:hover {
+      border: 5px rgba(255, 255, 255, 0.7) solid; }
+  .pos #circle {
     margin-top: 60px;
     position: relative;
     width: 100px;
     height: 100px;
     cursor: pointer;
     background: transparent;
-    border: 2px #202020 solid;
     border-radius: 50%; }
-    .menu-container #circle .fa-utensils {
+    .pos #circle .fa-utensils {
       position: absolute;
-      right: 32px;
+      right: 29px;
       top: 28px; }
-    .menu-container #circle .fa-beer {
+    .pos #circle .foodUtensils {
+      color: #fff;
+      transition: all .3s ease-in-out; }
+      .pos #circle .foodUtensils:hover {
+        color: rgba(255, 255, 255, 0.9); }
+    .pos #circle .changeW {
+      color: rgba(255, 255, 255, 0.7); }
+    .pos #circle .changeB:hover {
+      color: rgba(0, 0, 0, 0.4); }
+    .pos #circle .fa-beer {
       position: absolute;
-      right: 28px; }
+      right: 26px;
+      top: 28px; }
 
 footer {
   padding: 100px 0;

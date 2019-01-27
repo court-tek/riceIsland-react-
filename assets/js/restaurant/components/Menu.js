@@ -33,10 +33,14 @@ export default class Menu extends Component {
           return (
             <div className="menu-container">
                 <div className="foodMenu-title-section">
-                  <h1 style={posfixed}>MenuFood</h1>
-                  <div style={posfixed} id="circle">
-                    <i className="fas fa-utensils"></i>
-                  </div>
+                    <section className="inner-container">
+                          <h1 className="menTitle">MENU<span className="food">Food</span></h1>
+                          <div className="pos">
+                            <div style={posfixed} className="foodCircle" id="circle">
+                              <i className="fas fa-utensils changeW"></i>
+                            </div>
+                          </div>
+                    </section>
                 </div>
                 <div className="foodMenu">
                   <div className="menu-section">
@@ -64,8 +68,12 @@ export default class Menu extends Component {
                   <NavLink style={posfixed} onClick={this.props.hideIt} className="menu-toggle" to="/">
                       <div className="hamburger" />
                   </NavLink>
-                  <div id="circle" style={{position: 'fixed'}} onClick={this.beerMug}>
-                    <i className="fas fa-beer"></i>
+                  <div className="position-box">
+                      <div className="pos">
+                        <div className="foodCircleB" id="circle" style={{position: 'fixed'}} onClick={this.beerMug}>
+                          <i className="fas fa-beer changeB"></i>
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -73,11 +81,15 @@ export default class Menu extends Component {
         case false:
           return (
             <div className="menu-container">
-                <div className="foodMenu-title">
-                  <h1>MenuDrinks</h1>
-                  <div style={posfixed} onClick={this.forkAndSpoon} id="circle">
-                    <i className="fas fa-utensils"></i>
-                  </div>
+                <div className="foodMenu-title-section">
+                    <section className="inner-container">
+                      <h1 className="menTitle">MENU<span className="drinks">Drinks</span></h1>
+                        <div className="pos">
+                          <div style={posfixed} onClick={this.forkAndSpoon} className="foodCircleTrans" id="circle">
+                            <i className="fas fa-utensils foodUtensils"></i>
+                          </div>
+                        </div>
+                    </section>
                 </div>
                 <div className="foodMenu">
                   <h1>This is where the Drink options are.</h1>
@@ -86,7 +98,7 @@ export default class Menu extends Component {
                   <NavLink onClick={this.props.hideIt} className="menu-toggle" to="/">
                       <div className="hamburger" />
                   </NavLink>
-                  <div onClick={this.beerMug}>
+                  <div>
 
                   </div>
                 </div>
