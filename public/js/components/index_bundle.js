@@ -14449,7 +14449,7 @@ var Menu = function (_Component) {
             { className: "menu-container" },
             _react2.default.createElement(
               "div",
-              { className: "foodMenu-title-section" },
+              { className: "foodMenu-title-section backImage1" },
               _react2.default.createElement(
                 "section",
                 { className: "inner-container" },
@@ -14478,97 +14478,380 @@ var Menu = function (_Component) {
               "div",
               { className: "foodMenu" },
               _react2.default.createElement(
-                "div",
-                { className: "menu-section" },
+                "section",
+                { className: "sec1" },
                 _react2.default.createElement(
-                  "h2",
-                  { className: "section-title" },
-                  "Entrees"
+                  "div",
+                  { className: "menu-section" },
+                  _react2.default.createElement(
+                    "h2",
+                    { className: "section-title" },
+                    "Small Bites"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Chesse Rolls",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$2.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Pholouri",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$3.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Guyanese Patties",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$1.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Jamaican Beef Patties",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$1.80"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Coco Bread",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$2.20"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Roti",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$3.00"
+                    )
+                  )
                 ),
                 _react2.default.createElement(
-                  "p",
-                  { className: "section-description" },
-                  "Pumkin & Channa Curry",
+                  "div",
+                  { className: "menu-section" },
                   _react2.default.createElement(
-                    "span",
-                    null,
-                    "$10.00"
+                    "h2",
+                    { className: "section-title" },
+                    "Entrees"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Pumkin & Channa Curry",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$10.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Callaloo",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$10.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Vegetarian/Vegan Plate(3 Side Items)",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$8.50"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Chicken Curry",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$11.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Shrimp Curry",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$13.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Stew Chicken",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$11.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Jerk Chicken",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$11.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Flavored Wing Meal",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$10.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Oxtails",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$16.50"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Fried Fish Dinner",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$13.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Kingfish",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$14.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Salmon",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$15.99"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Rasta Pasta",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$15.99"
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "menu-section" },
+                  _react2.default.createElement(
+                    "h2",
+                    { className: "section-title" },
+                    "Sides"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Jasmine Rice"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Yellow"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Rice & Peas"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Guyanese Chow Mein"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Steamed Cabbage"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Collard Greens"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Mixed Vegetables"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Steamed Callaloo"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Yams"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Fried Plaintains"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Vegan Mac&Cheese"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Baked Mac&Cheese"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Cornbread"
                   )
                 )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "menu-section" },
+                "section",
+                { className: "sec2" },
                 _react2.default.createElement(
-                  "h2",
-                  { className: "section-title" },
-                  "Small Bites"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { className: "section-description" },
-                  "Pumkin & Channa Curry",
+                  "div",
+                  { className: "menu-section" },
                   _react2.default.createElement(
-                    "span",
-                    null,
-                    "$10.00"
+                    "h2",
+                    { className: "section-title" },
+                    "Sandwiches"
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Fish Sandwich",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$8.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Smoked Jerk BBQ Chicken Sandwich",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$9.50"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Roasted Eggplant Sandwich",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$7.99"
+                    )
                   )
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "menu-section" },
-                _react2.default.createElement(
-                  "h2",
-                  { className: "section-title" },
-                  "Sides"
                 ),
                 _react2.default.createElement(
-                  "p",
-                  { className: "section-description" },
-                  "Pumkin & Channa Curry",
+                  "div",
+                  { className: "menu-section" },
                   _react2.default.createElement(
-                    "span",
-                    null,
-                    "$10.00"
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "menu-section" },
-                _react2.default.createElement(
-                  "h2",
-                  { className: "section-title" },
-                  "Sandwiches"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { className: "section-description" },
-                  "Pumkin & Channa Curry",
+                    "h2",
+                    { className: "section-title" },
+                    "Desserts"
+                  ),
                   _react2.default.createElement(
-                    "span",
-                    null,
-                    "$10.00"
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "menu-section" },
-                _react2.default.createElement(
-                  "h2",
-                  { className: "section-title" },
-                  "Lunch"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { className: "section-description" },
-                  "Pumkin & Channa Curry",
+                    "p",
+                    { className: "section-description" },
+                    "Coconut Bread Pudding",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$3.50"
+                    )
+                  ),
                   _react2.default.createElement(
-                    "span",
-                    null,
-                    "$10.00"
+                    "p",
+                    { className: "section-description" },
+                    "Banana Pudding",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$3.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Pine Tart",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$2.00"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "p",
+                    { className: "section-description" },
+                    "Black Cake",
+                    _react2.default.createElement(
+                      "span",
+                      null,
+                      "$4.00"
+                    )
                   )
                 )
               )
@@ -14589,7 +14872,7 @@ var Menu = function (_Component) {
                   { className: "pos" },
                   _react2.default.createElement(
                     "div",
-                    { className: "foodCircleB", id: "circle", style: { position: 'fixed' }, onClick: this.beerMug },
+                    { className: "foodCircleB", id: "circle", style: posfixed, onClick: this.beerMug },
                     _react2.default.createElement("i", { className: "fas fa-beer changeB" })
                   )
                 )
@@ -14602,7 +14885,7 @@ var Menu = function (_Component) {
             { className: "menu-container" },
             _react2.default.createElement(
               "div",
-              { className: "foodMenu-title-section" },
+              { className: "foodMenu-title-section backImage2" },
               _react2.default.createElement(
                 "section",
                 { className: "inner-container" },
@@ -14641,7 +14924,7 @@ var Menu = function (_Component) {
               { className: "closeNext" },
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
+                { className: "menu-toggle", to: "/" },
                 _react2.default.createElement("div", { className: "hamburger" })
               ),
               _react2.default.createElement("div", null)

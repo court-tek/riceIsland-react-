@@ -1157,18 +1157,15 @@ header ul li {
   display: -ms-grid;
   display: grid;
   z-index: 101;
-  background: #ccc;
   height: 100vh;
-  -ms-grid-columns: 275px 2fr 230px;
-      grid-template-columns: 275px 2fr 230px; }
+  -ms-grid-columns: 310px 2fr 230px;
+      grid-template-columns: 310px 2fr 230px; }
   .menu-container .fas {
     font-size: 40px;
     cursor: pointer; }
   .menu-container .foodMenu-title-section {
     position: relative;
     color: #111;
-    background: url("https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg") no-repeat center center fixed;
-    background-size: cover;
     text-align: center; }
     .menu-container .foodMenu-title-section .inner-container {
       padding: 40px 0; }
@@ -1185,12 +1182,23 @@ header ul li {
           font-size: 18px;
           top: 2px;
           color: rgba(255, 255, 255, 0.7); }
+  .menu-container .backImage1 {
+    background: url("https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg") no-repeat center center fixed;
+    background-size: cover; }
+  .menu-container .backImage2 {
+    background: url("http://citrusvb.com/application/files/1914/9971/6379/drinks.jpg") no-repeat center center fixed;
+    background-size: cover; }
   .menu-container .foodMenu {
-    padding: 50px; }
-
-.foodMenu {
-  color: #111;
-  background: orange; }
+    margin: 0 auto;
+    padding: 50px;
+    color: #111;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .menu-container .foodMenu .sec1,
+    .menu-container .foodMenu .sec2 {
+      margin: 40px; }
 
 .closeNext {
   position: relative; }
@@ -1224,13 +1232,13 @@ header ul li {
   .pos .foodCircle {
     border: 5px rgba(255, 255, 255, 0.7) solid; }
   .pos .foodCircleB {
-    border: 5px #202020 solid;
-    transition: all .3s ease-in-out; }
+    border: 5px #ccc solid;
+    transition: all 0.3s ease-in-out; }
     .pos .foodCircleB:hover {
-      border: 5px rgba(0, 0, 0, 0.4) solid; }
+      border: 5px rgba(0, 0, 0, 0.1) solid; }
   .pos .foodCircleTrans {
     border: 5px #fff solid;
-    transition: all .3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .pos .foodCircleTrans:hover {
       border: 5px rgba(255, 255, 255, 0.7) solid; }
   .pos #circle {
@@ -1247,17 +1255,18 @@ header ul li {
       top: 28px; }
     .pos #circle .foodUtensils {
       color: #fff;
-      transition: all .3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       .pos #circle .foodUtensils:hover {
-        color: rgba(255, 255, 255, 0.9); }
+        color: rgba(255, 255, 255, 0.7); }
     .pos #circle .changeW {
       color: rgba(255, 255, 255, 0.7); }
     .pos #circle .changeB:hover {
-      color: rgba(0, 0, 0, 0.4); }
+      color: rgba(0, 0, 0, 0.1); }
     .pos #circle .fa-beer {
       position: absolute;
       right: 26px;
-      top: 28px; }
+      top: 28px;
+      color: #ccc; }
 
 footer {
   padding: 100px 0;

@@ -3,8 +3,8 @@
   display: grid;
   z-index: 101;
   height: 100vh;
-  -ms-grid-columns: 275px 2fr 230px;
-      grid-template-columns: 275px 2fr 230px; }
+  -ms-grid-columns: 310px 2fr 230px;
+      grid-template-columns: 310px 2fr 230px; }
   .menu-container .fas {
     font-size: 40px;
     cursor: pointer; }
@@ -34,11 +34,16 @@
     background: url("http://citrusvb.com/application/files/1914/9971/6379/drinks.jpg") no-repeat center center fixed;
     background-size: cover; }
   .menu-container .foodMenu {
-    padding: 50px; }
-
-.foodMenu {
-  color: #111;
-  background: orange; }
+    margin: 0 auto;
+    padding: 50px;
+    color: #111;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .menu-container .foodMenu .sec1,
+    .menu-container .foodMenu .sec2 {
+      margin: 40px; }
 
 .closeNext {
   position: relative; }
@@ -73,12 +78,12 @@
     border: 5px rgba(255, 255, 255, 0.7) solid; }
   .pos .foodCircleB {
     border: 5px #ccc solid;
-    transition: all .3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .pos .foodCircleB:hover {
       border: 5px rgba(0, 0, 0, 0.1) solid; }
   .pos .foodCircleTrans {
     border: 5px #fff solid;
-    transition: all .3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .pos .foodCircleTrans:hover {
       border: 5px rgba(255, 255, 255, 0.7) solid; }
   .pos #circle {
@@ -95,7 +100,7 @@
       top: 28px; }
     .pos #circle .foodUtensils {
       color: #fff;
-      transition: all .3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       .pos #circle .foodUtensils:hover {
         color: rgba(255, 255, 255, 0.7); }
     .pos #circle .changeW {
