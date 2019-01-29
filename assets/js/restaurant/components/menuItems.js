@@ -34,7 +34,7 @@ export class SpecMenuItems extends Component {
               {specialItems.specName}
             </span>
             <p
-              className="details"
+              className="details paraStyle"
               style={{
                 fontWeight: 300,
                 fontSize: "0.8rem",

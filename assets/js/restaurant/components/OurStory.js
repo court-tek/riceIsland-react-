@@ -15,7 +15,7 @@ class OurStory extends Component {
             <div className="quote-our col-md-6">
               <h5>Our Story</h5>
               <h2>Cooking is the art of adjustment</h2>
-              <p>
+              <p className="paraStyle">
                 Lorem ipsum dolor amet poke bitters tbh truffaut four loko
                 portland kitsch jean shorts trust fund craft beer single-origin
                 coffee ramps hot chicken shaman iceland. Scenester yuccie fam

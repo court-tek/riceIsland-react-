@@ -1,12 +1,14 @@
-import React from "react";
-import MenuI from "../Menu";
+import React, { Component } from "react";
+import MenuI from "../MenuI";
 import Navigation from '../Navigation';
 
 
-const Menu = () => (
-  <div>
-    <MenuI />
-  </div>
-);
-
-export default Menu;
+export default class Menu extends Component {
+  render() {
+    return (
+      <div>
+      <MenuI />
+      </div>
+    );
+  }
+}

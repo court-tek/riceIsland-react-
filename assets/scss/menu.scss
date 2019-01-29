@@ -49,15 +49,44 @@
     -o-background-size: cover;
     background-size: cover;
   }
+  .drinkMenu {
+    margin: 20px;
+    padding: 40px;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+  }
   .foodMenu {
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
     color: #111;
     display: flex;
     justify-content: space-between;
     .sec1,
     .sec2 {
       margin: 40px;
+      .menu-section {
+        margin-bottom: 20px;
+        #title-container {
+          margin-bottom: 18px;
+          h1 {
+            font-family: "Rozha One", serif;
+            font-size: 45px;
+          }
+          .descr {
+
+          }
+        }
+        #item-description {
+          .itemTag {
+            font-size: 1rem;
+            color: grey;
+            margin: 0.5rem 0 0.8rem;
+            .price {
+            }
+          }
+        }
+      }
     }
   }
 }

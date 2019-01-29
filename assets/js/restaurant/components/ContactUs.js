@@ -15,7 +15,7 @@ class ContactUs extends Component {
                   435 main st<br />
                   Queens, NY 12402
                 </h6>
-                <p>
+                <p className="paraStyle">
                   <strong>email:</strong>{" "}
                   <a href="info@islandricegrill.com">
                     info@islandricegrill.com
@@ -26,12 +26,12 @@ class ContactUs extends Component {
                 <h6 style={{ fontSize: "1rem" }}>Phone:</h6>
                 <div className="title">(516)-346-6789</div>
                 <h6>Lunch Specials</h6>
-                <p>
+                <p className="paraStyle">
                   Friday, Saturday, and Sunday<br />
                   from 12pm - 1:30pm
                 </p>
                 <h6>Dinner Specials</h6>
-                <p>
+                <p className="paraStyle">
                   Daily<br />
                   from 6pm - 9:30pm
                 </p>

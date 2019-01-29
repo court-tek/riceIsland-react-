@@ -863,7 +863,7 @@ strong {
 em {
   font-style: italic; }
 
-p {
+.paraStyle {
   font-size: 0.8rem;
   color: grey;
   line-height: 2;
@@ -1188,9 +1188,17 @@ header ul li {
   .menu-container .backImage2 {
     background: url("http://citrusvb.com/application/files/1914/9971/6379/drinks.jpg") no-repeat center center fixed;
     background-size: cover; }
+  .menu-container .drinkMenu {
+    margin: 20px;
+    padding: 40px;
+    color: #111;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .menu-container .foodMenu {
     margin: 0 auto;
-    padding: 50px;
+    padding: 40px;
     color: #111;
     display: -ms-flexbox;
     display: flex;
@@ -1199,6 +1207,21 @@ header ul li {
     .menu-container .foodMenu .sec1,
     .menu-container .foodMenu .sec2 {
       margin: 40px; }
+      .menu-container .foodMenu .sec1 .menu-section,
+      .menu-container .foodMenu .sec2 .menu-section {
+        margin-bottom: 20px; }
+        .menu-container .foodMenu .sec1 .menu-section #title-container,
+        .menu-container .foodMenu .sec2 .menu-section #title-container {
+          margin-bottom: 18px; }
+          .menu-container .foodMenu .sec1 .menu-section #title-container h1,
+          .menu-container .foodMenu .sec2 .menu-section #title-container h1 {
+            font-family: "Rozha One", serif;
+            font-size: 45px; }
+        .menu-container .foodMenu .sec1 .menu-section #item-description .itemTag,
+        .menu-container .foodMenu .sec2 .menu-section #item-description .itemTag {
+          font-size: 1rem;
+          color: grey;
+          margin: 0.5rem 0 0.8rem; }
 
 .closeNext {
   position: relative; }
