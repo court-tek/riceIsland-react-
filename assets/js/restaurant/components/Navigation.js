@@ -58,6 +58,11 @@ export default class Navigation extends Component {
                 </NavLink>
               </li>
               <li>
+                <NavLink style={dropHeaderStyle} to="/gallery">
+                  Gallery
+                </NavLink>
+              </li>
+              <li>
                 <NavLink style={dropHeaderStyle} to="/about">
                   About
                 </NavLink>
@@ -74,6 +79,11 @@ export default class Navigation extends Component {
             <li>
               <NavLink style={headerStyle} to="/menu">
                 Menu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink style={headerStyle} to="/gallery">
+                Gallery
               </NavLink>
             </li>
             <li>

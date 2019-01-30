@@ -13,7 +13,10 @@ export default class DrinksMenuArea extends Component {
           {menud.items.map(menuitem => (
             <tbody id="item-description" key={menuitem.name}>
               <tr>
-                <td style={{width: '100%', padding: '8px 8px 8px 0',textAlign: 'left'}} className="itemTag">{menuitem.name}</td>
+                <td style={{width: '100%', padding: '8px 8px 8px 0',textAlign: 'left'}} className="itemTag">
+                  {menuitem.name}<br/>
+                  <p style={{fontSize: '14px'}}>{menuitem.iteminfo}</p>
+                </td>
                 <td style={{width: '50%',  padding: '8px'}} className="price">{menuitem.price}</td>
               </tr>
             </tbody>

@@ -20,29 +20,22 @@
         left: 60px;
         color: #fff;
         font-size: 30px;
-        font-weight: 700; }
+        font-weight: 700;
+        padding-right: 10px; }
         .menu-container .foodMenu-title-section .inner-container .menTitle .food,
         .menu-container .foodMenu-title-section .inner-container .menTitle .drinks {
           position: absolute;
           font-size: 18px;
           top: 2px;
-          color: rgba(255, 255, 255, 0.7); }
+          color: rgba(255, 255, 255, 0.8);
+          margin-left: 10px; }
   .menu-container .backImage1 {
     background: url("https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg") no-repeat center center fixed;
     background-size: cover; }
   .menu-container .backImage2 {
     background: url("http://citrusvb.com/application/files/1914/9971/6379/drinks.jpg") no-repeat center center fixed;
     background-size: cover; }
-  .menu-container .drinkMenu {
-    margin: 20px;
-    padding: 40px;
-    color: #111;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
   .menu-container .foodMenu {
-    margin: 0 auto;
     padding: 40px;
     color: #111;
     display: -ms-flexbox;

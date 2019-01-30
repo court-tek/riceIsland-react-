@@ -97,9 +97,6 @@ export default class Menu extends Component {
                 <section className="sec1">
                   {menuToRenderDrinks.map(menu => <DrinksMenuArea key={menu.name} menud={menu} /> )}
                 </section>
-                <section className="sec2">
-
-                </section>
                 </div>
                 <div className="closeNext">
                   <NavLink className="menu-toggle" to="/">

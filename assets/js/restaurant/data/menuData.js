@@ -19,24 +19,28 @@ let fakeServerData = {
         name: "Entrees",
         info: 'Served with 2 sides',
         items: [
-          { name: "Pumpkin & Channa Curry", price: "$10.00" },
-          { name: "Callaloo(Spinach)Cookup", price: "$10.00" },
-          { name: "Vegan Plate(3 Side Items)", price: "$8.50" },
-          { name: "Chicken Curry", price: "$11.99" },
-          { name: "Shrimp Curry", price: "$13.99" },
-          { name: "Stew Chicken", price: "$11.99" },
-          { name: "Jerk Chicken", price: "$11.99" },
-          { name: "Flavored Wing Meal", price: "$10.99" },
-          { name: "Oxtails", price: "$16.99" },
-          { name: "Fried Fish Dinner", price: "$14.99", iteminfo: "Fried(w/wo Escovitch), Curried, Stewed" },
-          { name: "Salmom", price: "$15.99", iteminfo: "" },
-          { name: "Rasta Pasta", price: "", iteminfo: [
-            {name: "Vegan", price: '$9.99'},
-            {name: "Vegan", price: '$9.99'},
-            {name: "Vegan", price: '$9.99'},
-            {name: "Vegan", price: '$9.99'},
-            {name: "Vegan", price: '$9.99'},
-          ] }
+          { name: "Pumpkin & Channa Curry", price: "$10.00", iteminfo: [] },
+          { name: "Callaloo(Spinach)Cookup", price: "$10.00", iteminfo: [] },
+          { name: "Vegan Plate(3 Side Items)", price: "$8.50", iteminfo: [] },
+          { name: "Chicken Curry", price: "$11.99"},
+          { name: "Shrimp Curry", price: "$13.99"},
+          { name: "Stew Chicken", price: "$11.99"},
+          { name: "Jerk Chicken", price: "$11.99"},
+          { name: "Flavored Wing Meal", price: "$10.99"},
+          { name: "Oxtails", price: "$16.99"},
+          { name: "Fried Fish Dinner", price: "$14.99", iteminfo: [
+            "Fried(w/wo Escovitch), Curried, Stewed"
+          ] },
+          { name: "Salmom", price: "$15.99", iteminfo: [] },
+          { name: "Rasta Pasta", iteminfo: [
+            'Oxtail: $15.99 ',
+            'Vegan: $9.99 ',
+            '        ',
+            'Jerk Chicken: $11.99 ',
+            'Shrimp: $13.99 ',
+            'Salmon: $13.99 '
+          ]
+         }
         ]
       },
       {
@@ -112,7 +116,7 @@ let fakeServerData = {
         subinfo: '',
         subprice: '',
         items: [
-          { name: "Half & Half", price: "$2.00", iteminfo: '(half tea/half lemonade) dine-in free refills' },
+          { name: "Half & Half", price: "$2.00", iteminfo: ['(half tea/half lemonade) dine-in free refills'] },
           { name: "Island Punch", price: "$3.00" },
           { name: "Sister Yvonne's Sorrel", price: "$3.00" },
           { name: "Soda", price: "$2.50" },
