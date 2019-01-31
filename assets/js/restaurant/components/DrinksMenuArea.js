@@ -15,12 +15,25 @@ export default class DrinksMenuArea extends Component {
               <tr>
                 <td style={{width: '100%', padding: '8px 8px 8px 0',textAlign: 'left'}} className="itemTag">
                   {menuitem.name}<br/>
-                  <p style={{fontSize: '14px'}}>{menuitem.iteminfo}</p>
+                  <ul style={{fontSize: '14px', display: 'block'}}>
+                    <li>{menuitem.iteminfo}</li>
+                  </ul>
                 </td>
-                <td style={{width: '50%',  padding: '8px'}} className="price">{menuitem.price}</td>
+                <td style={{width: '50%', padding: '8px'}} className="price">{menuitem.price}</td>
               </tr>
             </tbody>
           ))}
+        </table>
+        <table>
+          <tr>
+            <td>
+              <ul>
+                <li>HEllo</li>
+                <li>HEllo</li>
+                <li>HEllo</li>
+              </ul>
+            </td>
+          </tr>
         </table>
       </div>
     );

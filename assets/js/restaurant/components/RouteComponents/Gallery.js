@@ -1,13 +1,14 @@
 import React from "react";
 import Navigation from '../Navigation';
 import SiteHeader from '../SiteHeader';
+import ProductGallery from '../ProductGallery';
 
 
 const Gallery = () => (
   <div>
     <Navigation />
     <SiteHeader />
-    Hello This is the Gallery
+    <ProductGallery />
   </div>
 );
 

@@ -46,7 +46,7 @@ let fakeServerData = {
       {
         id: 'islandLeft',
         name: "Sides",
-        info: '',
+        info: '$3(a la carte)',
         items: [
           { name: "Jasmine Rice", price: "" },
           { name: "Yellow Rice", price: "" },
@@ -66,7 +66,7 @@ let fakeServerData = {
       {
         id: 'islandRight',
         name: "Sandwiches",
-        info: '',
+        info: 'served with french fries of plantains',
         items: [
           { name: "Fish Sandwich", price: "$8.99" },
           { name: "Smoked Jerk BBQ Chicken Sandwich", price: "9.50" },
@@ -87,7 +87,7 @@ let fakeServerData = {
       {
         id: 'islandRight',
         name: "Kids Meal",
-        info: '',
+        info: '10 and under(includes one side)',
         items: [
           { name: "Chicken Tenders", price: "$6.99" },
           { name: "Fried Fish", price: "$6.99" },
@@ -119,8 +119,8 @@ let fakeServerData = {
           { name: "Half & Half", price: "$2.00", iteminfo: ['(half tea/half lemonade) dine-in free refills'] },
           { name: "Island Punch", price: "$3.00" },
           { name: "Sister Yvonne's Sorrel", price: "$3.00" },
-          { name: "Soda", price: "$2.50" },
-          { name: "D&G", price: "$2.00" },
+          { name: "Soda", price: "$2.50", hat: ['Ginger Ale(Can) $1.00 ', 'Diet Coke(Bottle) $1.50 ', 'Coke ', 'Spite ', 'Fanta(Glass Bottle) $2.50'], },
+          { name: "D&G", price: "$2.00", hat: ['Kola ', 'Champangne ', 'Pineapple ', 'Ginger Beer ', 'or ', 'Cream Soda'] },
           { name: "Ting", price: "$2.50" }
         ]
       },
