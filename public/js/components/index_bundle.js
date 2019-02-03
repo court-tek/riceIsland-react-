@@ -14895,6 +14895,11 @@ var Menu = function (_Component) {
                     { onClick: this.beerMug },
                     "Next"
                   )
+                ),
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
+                  _react2.default.createElement("div", { className: "hamburger" })
                 )
               ),
               _react2.default.createElement(
@@ -14995,6 +15000,11 @@ var Menu = function (_Component) {
                     "Next"
                   )
                 )
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { onClick: this.props.hideIt, className: "menu-toggle", to: "/" },
+                _react2.default.createElement("div", { className: "hamburger" })
               ),
               _react2.default.createElement(
                 "section",
@@ -15332,7 +15342,7 @@ var Reviews = function (_Component) {
   }
 
   _createClass(Reviews, [{
-    key: "rightClick",
+    key: 'rightClick',
     value: function rightClick() {
       var reviewStatus = this.state.reviewStatus;
       var reviewData = this.props.reviewData;
@@ -15349,60 +15359,65 @@ var Reviews = function (_Component) {
       }
     }
   }, {
-    key: "leftClick",
+    key: 'leftClick',
     value: function leftClick() {
       var reviewStatus = this.state.reviewStatus;
+      var reviewData = this.props.reviewData;
 
       var reviewS = reviewStatus.currentReview - 1;
-      this.setState({
-        reviewStatus: {
-          currentReview: reviewS
-        }
-      });
+      if (reviewStatus.currentReview == 0) {
+        console.log('do not collect $200');
+      } else {
+        this.setState({
+          reviewStatus: {
+            currentReview: reviewS
+          }
+        });
+      }
     }
   }, {
-    key: "currentReview",
+    key: 'currentReview',
     value: function currentReview() {
       var reviewStatus = this.state.reviewStatus;
       var reviewData = this.props.reviewData;
 
       console.log(reviewData);
       return _react2.default.createElement(
-        "div",
+        'div',
         null,
         _react2.default.createElement(
-          "h5",
-          { className: "comp-title" },
-          "Reviews"
+          'h5',
+          { className: 'comp-title' },
+          'Reviews'
         ),
         _react2.default.createElement(
-          "h2",
+          'h2',
           null,
           reviewData[reviewStatus.currentReview].company
         ),
         _react2.default.createElement(
-          "h4",
+          'h4',
           null,
-          "\"",
+          '"',
           reviewData[reviewStatus.currentReview].highlight,
-          "\""
+          '"'
         ),
         _react2.default.createElement(
-          "p",
+          'p',
           null,
           reviewData[reviewStatus.currentReview].review
         ),
         _react2.default.createElement(
-          "div",
-          { className: "author" },
+          'div',
+          { className: 'author' },
           _react2.default.createElement(
-            "strong",
+            'strong',
             null,
             reviewData[reviewStatus.currentReview].author
           ),
-          " - ",
+          ' - ',
           _react2.default.createElement(
-            "em",
+            'em',
             null,
             reviewData[reviewStatus.currentReview].authorInfo
           )
@@ -15410,38 +15425,38 @@ var Reviews = function (_Component) {
       );
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       var reviewStatus = this.state.reviewStatus;
       var reviewData = this.props.reviewData;
 
       return _react2.default.createElement(
-        "section",
-        { id: "reviews" },
+        'section',
+        { id: 'reviews' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           _react2.default.createElement(
-            "div",
-            { className: "row" },
+            'div',
+            { className: 'row' },
             _react2.default.createElement(
-              "div",
-              { className: "col-md-8" },
+              'div',
+              { className: 'col-md-8' },
               _react2.default.createElement(
-                "div",
-                { className: "side-img" },
-                _react2.default.createElement("img", { src: "https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" })
+                'div',
+                { className: 'side-img' },
+                _react2.default.createElement('img', { src: 'https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg' })
               )
             ),
             _react2.default.createElement(
-              "div",
-              { className: "col-md-4" },
+              'div',
+              { className: 'col-md-4' },
               this.currentReview(),
               _react2.default.createElement(
-                "div",
-                { className: "arrows" },
-                _react2.default.createElement("i", { onClick: this.leftClick, className: "fas fa-arrow-left " + (reviewStatus.currentReview > 0 ? 'ready' : '') }),
-                _react2.default.createElement("i", { onClick: this.rightClick, className: "fas fa-arrow-right " + (reviewStatus.currentReview == reviewData.length - 1 ? '' : 'ready') })
+                'div',
+                { className: 'arrows' },
+                _react2.default.createElement('i', { onClick: this.leftClick, className: 'fas fa-arrow-left ' + (reviewStatus.currentReview > 0 ? 'ready' : '') }),
+                _react2.default.createElement('i', { onClick: this.rightClick, className: 'fas fa-arrow-right ' + (reviewStatus.currentReview == reviewData.length - 1 ? '' : 'ready') })
               )
             )
           )
@@ -16104,7 +16119,7 @@ var reviewsData = [{
   authorInfo: 'Winner of The Chef Masters',
   review: 'Lorem ipsum dolor amet mollit schlitz hammock, street art shabby chic shaman taiyaki man bun brunch exercitation quis. Cred adipisicing swag selvage everyday carry bushwick poutine art party deep v mlkshk voluptate occupy. Anim beard meh proident ugh sed voluptate tilde hashtag wolf scenester affogato sunt magna irure. Occaecat do tumeric chillwave, shabby chic copper mug nulla edison bulb labore next level pitchfork la croix minim vice poutine. Kogi anim tilde roof party pork belly. Tousled in yr, schlitz palo santo street art bushwick laborum post-ironic culpa next level XOXO portland.'
 }, {
-  company: 'The New York Times',
+  company: 'New York Times',
   author: 'Joe Bastiachi',
   highlight: 'Best Restaurant in Queens',
   authorInfo: 'Winner of The Chef Masters',

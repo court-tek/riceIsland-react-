@@ -29,12 +29,17 @@ class Reviews extends Component {
 
   leftClick() {
     const { reviewStatus } = this.state;
+    const { reviewData } = this.props;
     let reviewS = reviewStatus.currentReview - 1;
-    this.setState({
-      reviewStatus: {
-        currentReview: reviewS
-      }
-    })
+    if (reviewStatus.currentReview == 0) {
+      console.log('do not collect $200');
+    } else {
+      this.setState({
+        reviewStatus: {
+          currentReview: reviewS
+        }
+      })
+    }
   }
 
   currentReview() {

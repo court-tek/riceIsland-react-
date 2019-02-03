@@ -1074,10 +1074,11 @@ header ul li {
   #reviews .side-img {
     position: relative;
     text-align: left;
-    height: 200px;
+    height: 100px;
     width: 100%; }
     #reviews .side-img img {
-      position: absolute; }
+      position: absolute;
+      height: 500px; }
   #reviews h4 {
     font-weight: 600;
     font-size: 0.9rem;
@@ -1220,6 +1221,8 @@ header ul li {
       .menu-container .foodMenu .title-vis li {
         display: inline-block;
         padding: 10px; }
+    .menu-container .foodMenu .menu-toggle {
+      display: none; }
     .menu-container .foodMenu .sec1,
     .menu-container .foodMenu .sec2 {
       width: 100%;
@@ -1357,6 +1360,8 @@ ul {
 /* ###### Media Queries ###### */
 /* #### Tablet #### */
 @media only screen and (max-width: 960px) {
+  .side-img {
+    display: none; }
   .menu-container {
     width: 100%;
     display: block;
@@ -1369,6 +1374,9 @@ ul {
       width: 100%; }
       .menu-container .foodMenu .title-vis {
         display: inline-block; }
+      .menu-container .foodMenu .menu-toggle {
+        display: block;
+        position: absolute; }
       .menu-container .foodMenu .sec1,
       .menu-container .foodMenu .sec2 {
         width: 100%;
