@@ -1155,6 +1155,15 @@ header ul li {
 
 #gallery {
   padding: 100px 0; }
+  #gallery .title-container .title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Rohza One", serif; }
+  #gallery .box {
+    border: 5px #fff solid;
+    height: 300px;
+    background-color: purple; }
 
 .menu-container {
   display: -ms-grid;
@@ -1200,11 +1209,24 @@ header ul li {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    .menu-container .foodMenu .title-vis {
+      display: none;
+      margin: 0 auto; }
+      .menu-container .foodMenu .title-vis .prev,
+      .menu-container .foodMenu .title-vis .nex {
+        font-family: "Rhoza One", serif;
+        font-size: 30px;
+        font-weight: 600; }
+      .menu-container .foodMenu .title-vis li {
+        display: inline-block;
+        padding: 10px; }
     .menu-container .foodMenu .sec1,
     .menu-container .foodMenu .sec2 {
+      width: 100%;
       margin: 40px; }
       .menu-container .foodMenu .sec1 .menu-section,
       .menu-container .foodMenu .sec2 .menu-section {
+        width: 100%;
         margin-bottom: 20px; }
         .menu-container .foodMenu .sec1 .menu-section #title-container,
         .menu-container .foodMenu .sec2 .menu-section #title-container {
@@ -1334,6 +1356,36 @@ ul {
 
 /* ###### Media Queries ###### */
 /* #### Tablet #### */
+@media only screen and (max-width: 960px) {
+  .menu-container {
+    width: 100%;
+    display: block;
+    text-align: center; }
+    .menu-container .foodMenu-title-section {
+      display: none;
+      width: 100%; }
+    .menu-container .foodMenu {
+      display: inline-block;
+      width: 100%; }
+      .menu-container .foodMenu .title-vis {
+        display: inline-block; }
+      .menu-container .foodMenu .sec1,
+      .menu-container .foodMenu .sec2 {
+        width: 100%;
+        margin: 0; }
+        .menu-container .foodMenu .sec1 .menu-section #title-container,
+        .menu-container .foodMenu .sec2 .menu-section #title-container {
+          background: #111;
+          color: #fff;
+          padding: 10px;
+          width: 100%; }
+    .menu-container .closeNext {
+      display: none; }
+  .pos #circle {
+    display: none; }
+    .pos #circle .fa-beer {
+      display: none; } }
+
 /* #### Handset #### */
 @media only screen and (max-width: 600px) {
   /* header */

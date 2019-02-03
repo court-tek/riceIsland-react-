@@ -7,39 +7,16 @@ import ContactUs from "../ContactUs";
 import SpecialMenu from "../SpecialMenu";
 import Footer from "../Footer";
 import Navigation from "../Navigation";
-
-
-let fakeServerData = [
-  {
-    company: 'Blavity',
-    author: 'Tyrone Biggums',
-    highlight: 'Best Restaurant in Queens',
-    authorInfo: 'Winner of The Crack Rock Masters',
-    review: 'Drugs and alcohol have ruined my life. ipsum dolor amet mollit schlitz hammock, street art shabby chic shaman taiyaki man bun brunch exercitation quis. Cred adipisicing swag selvage everyday carry bushwick poutine art party deep v mlkshk voluptate occupy. Anim beard meh proident ugh sed voluptate tilde hashtag wolf scenester affogato sunt magna irure. Occaecat do tumeric chillwave, shabby chic copper mug nulla edison bulb labore next level pitchfork la croix minim vice poutine. Kogi anim tilde roof party pork belly. Tousled in yr, schlitz palo santo street art bushwick laborum post-ironic culpa next level XOXO portland.'
-  },
-  {
-    company: 'NBC',
-    author: 'Joe Bastiachi',
-    highlight: 'Best Restaurant in Queens',
-    authorInfo: 'Winner of The Chef Masters',
-    review: 'Lorem ipsum dolor amet mollit schlitz hammock, street art shabby chic shaman taiyaki man bun brunch exercitation quis. Cred adipisicing swag selvage everyday carry bushwick poutine art party deep v mlkshk voluptate occupy. Anim beard meh proident ugh sed voluptate tilde hashtag wolf scenester affogato sunt magna irure. Occaecat do tumeric chillwave, shabby chic copper mug nulla edison bulb labore next level pitchfork la croix minim vice poutine. Kogi anim tilde roof party pork belly. Tousled in yr, schlitz palo santo street art bushwick laborum post-ironic culpa next level XOXO portland.'
-  },
-  {
-    company: 'The New York Times',
-    author: 'Joe Bastiachi',
-    highlight: 'Best Restaurant in Queens',
-    authorInfo: 'Winner of The Chef Masters',
-    review: 'Lorem ipsum dolor amet mollit schlitz hammock, street art shabby chic shaman taiyaki man bun brunch exercitation quis. Cred adipisicing swag selvage everyday carry bushwick poutine art party deep v mlkshk voluptate occupy. Anim beard meh proident ugh sed voluptate tilde hashtag wolf scenester affogato sunt magna irure. Occaecat do tumeric chillwave, shabby chic copper mug nulla edison bulb labore next level pitchfork la croix minim vice poutine. Kogi anim tilde roof party pork belly. Tousled in yr, schlitz palo santo street art bushwick laborum post-ironic culpa next level XOXO portland.'
-  }
-]
+import reviewsData from "../../data/reviewsData";
 
 class Home extends Component {
   constructor() {
     super();
     this.state = {
-      fakeServerData
+      reviewsData
     };
   }
+
   render() {
     console.log(this.state);
     let priceStyle = {
@@ -71,7 +48,7 @@ class Home extends Component {
           </div>
         </section>
         <RandomQuote />
-        <Reviews reviewData={this.state.fakeServerData} />
+        <Reviews reviewData={this.state.reviewsData} />
         <ContactUs />
         <Footer />
       </div>

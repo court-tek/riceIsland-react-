@@ -58,6 +58,11 @@ export default class Menu extends Component {
                 </div>
 
                 <div className="foodMenu">
+                  <ul className="title-vis">
+                    <li className="prev"><h3 style={{color: "#ccc"}}>Prev</h3></li>
+                      <li><i className="fas fa-utensils"></i></li>
+                    <li className="nex"><h3 onClick={this.beerMug}>Next</h3></li>
+                  </ul>
                   <section className="sec1">
                     {menuToRender.map(menu => <CenterMenuAreaLeft key={menu.name} menu={menu} /> )}
                   </section>
@@ -94,6 +99,11 @@ export default class Menu extends Component {
                     </section>
                 </div>
                 <div className="foodMenu drinkMenu">
+                <ul className="title-vis">
+                  <li className="prev"><h3 onClick={this.forkAndSpoon}>Prev</h3></li>
+                    <li><i className="fas fa-beer"></i></li>
+                  <li className="nex"><h3 style={{color: "#ccc"}}>Next</h3></li>
+                </ul>
                 <section className="sec1">
                   {menuToRenderDrinks.map(menu => <DrinksMenuArea key={menu.name} menud={menu} /> )}
                 </section>

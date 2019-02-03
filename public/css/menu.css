@@ -42,11 +42,24 @@
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    .menu-container .foodMenu .title-vis {
+      display: none;
+      margin: 0 auto; }
+      .menu-container .foodMenu .title-vis .prev,
+      .menu-container .foodMenu .title-vis .nex {
+        font-family: "Rhoza One", serif;
+        font-size: 30px;
+        font-weight: 600; }
+      .menu-container .foodMenu .title-vis li {
+        display: inline-block;
+        padding: 10px; }
     .menu-container .foodMenu .sec1,
     .menu-container .foodMenu .sec2 {
+      width: 100%;
       margin: 40px; }
       .menu-container .foodMenu .sec1 .menu-section,
       .menu-container .foodMenu .sec2 .menu-section {
+        width: 100%;
         margin-bottom: 20px; }
         .menu-container .foodMenu .sec1 .menu-section #title-container,
         .menu-container .foodMenu .sec2 .menu-section #title-container {

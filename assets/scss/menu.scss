@@ -9,6 +9,7 @@
     cursor: pointer;
   }
   .foodMenu-title-section {
+    // display: none;
     position: relative;
     color: #111;
     // margin-top: 60px;
@@ -52,15 +53,30 @@
     background-size: cover;
   }
   .foodMenu {
-    // margin: 0 auto;
     padding: 40px;
     color: #111;
     display: flex;
     justify-content: space-between;
+    .title-vis {
+      display: none;
+      margin: 0 auto;
+      .prev,
+      .nex {
+        font-family: "Rhoza One", serif;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      li {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
     .sec1,
     .sec2 {
+      width: 100%;
       margin: 40px;
       .menu-section {
+        width: 100%;
         margin-bottom: 20px;
         #title-container {
           margin-bottom: 18px;

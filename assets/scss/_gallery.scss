@@ -1,12 +1,22 @@
 #gallery {
-  // text-align: right;
+  // background: red;
   padding: 100px 0;
-  .main {
-    .box {
-      width: 200px;
-      margin: 10px;
-      height: 200px;
-      background: purple;
+  // .main {
+  //   background-color: #F5F5DC;
+  //   width: 1200px;
+  //   margin: auto;
+  //   border: 1px solid #000;
+  .title-container {
+    .title {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 20px;
+      font-family: "Rohza One", serif;
     }
   }
-}
+  .box {
+     border: 5px #fff solid;
+     height: 300px;
+     background-color: purple;
+    }
+  }

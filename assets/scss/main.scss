@@ -36,7 +36,49 @@ ul {
 }
 /* ###### Media Queries ###### */
 /* #### Tablet #### */
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+  .menu-container {
+    width: 100%;
+    display: block;
+    text-align: center;
+    .foodMenu-title-section {
+      display: none;
+      width: 100%;
+    }
+    .foodMenu {
+      display: inline-block;
+      width: 100%;
+      // padding: 0;
+      .title-vis {
+        display: inline-block;
+      }
+      .sec1,
+      .sec2 {
+        width: 100%;
+        margin: 0;
+        .menu-section {
+          #title-container {
+            background: #111;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .closeNext {
+      display: none;
+    }
+  }
+  .pos {
+    #circle {
+      display: none;
+      .fa-beer {
+        display: none;
+      }
+    }
+  }
+}
 /* #### Handset #### */
 @media only screen and (max-width: 600px) {
   /* header */

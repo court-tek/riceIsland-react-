@@ -5,9 +5,36 @@ class Reviews extends Component {
     super();
     this.state = {
       reviewStatus: {
-        currentReview: 1
+        currentReview: 0
       }
     };
+    this.rightClick = this.rightClick.bind(this);
+    this.leftClick = this.leftClick.bind(this);
+  }
+
+  rightClick() {
+    const { reviewStatus } = this.state;
+    const { reviewData } = this.props;
+    let reviewS = reviewStatus.currentReview + 1;
+    if (reviewStatus.currentReview == reviewData.length - 1) {
+      console.log('Do not pass go');
+    } else {
+      this.setState({
+        reviewStatus: {
+          currentReview: reviewS
+        }
+      })
+    }
+  }
+
+  leftClick() {
+    const { reviewStatus } = this.state;
+    let reviewS = reviewStatus.currentReview - 1;
+    this.setState({
+      reviewStatus: {
+        currentReview: reviewS
+      }
+    })
   }
 
   currentReview() {
@@ -26,8 +53,10 @@ class Reviews extends Component {
       </div>
     );
   }
-  
+
   render() {
+    const { reviewStatus } = this.state;
+    const { reviewData } = this.props;
     return (
       <section id="reviews">
         <div className="container">
@@ -40,8 +69,8 @@ class Reviews extends Component {
             <div className="col-md-4">
               {this.currentReview()}
               <div className="arrows">
-                <i className="fas fa-arrow-left" />
-                <i className="fas fa-arrow-right ready" />
+                <i onClick={this.leftClick} className={`fas fa-arrow-left ${(reviewStatus.currentReview > 0) ? 'ready' : ''}`} />
+                <i onClick={this.rightClick} className={`fas fa-arrow-right ${(reviewStatus.currentReview == reviewData.length -1) ? '' : 'ready'}`} />
               </div>
             </div>
           </div>

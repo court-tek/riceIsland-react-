@@ -7,7 +7,7 @@ export default class CenterMenuAreaRight extends Component {
       <div className="menu-section">
         <div id="title-container">
           <h1>{menur.name}</h1>
-          <p style={{fontStyle: 'italic'}} className="descr">{menur.info}</p>
+          <p style={{fontStyle: 'italic', marginTop: '5 b              n/px'}} className="descr">{menur.info}</p>
         </div>
         <table>
           {menur.items.map(menuitem => (
