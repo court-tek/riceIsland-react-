@@ -24,17 +24,6 @@ export default class DrinksMenuArea extends Component {
             </tbody>
           ))}
         </table>
-        <table>
-          <tr>
-            <td>
-              <ul>
-                <li>HEllo</li>
-                <li>HEllo</li>
-                <li>HEllo</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
       </div>
     );
   }

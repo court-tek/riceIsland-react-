@@ -4103,7 +4103,7 @@ var Navigation = function (_Component) {
             "label",
             {
               htmlFor: "menuToggle",
-              className: "hamburger pull-right visible-xs"
+              className: "pull-right visible-xs"
             },
             _react2.default.createElement("i", {
               style: { fontSize: "25px", display: "block", float: "right" },
@@ -14581,37 +14581,6 @@ var DrinksMenuArea = function (_Component) {
               )
             );
           })
-        ),
-        _react2.default.createElement(
-          "table",
-          null,
-          _react2.default.createElement(
-            "tr",
-            null,
-            _react2.default.createElement(
-              "td",
-              null,
-              _react2.default.createElement(
-                "ul",
-                null,
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  "HEllo"
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  "HEllo"
-                ),
-                _react2.default.createElement(
-                  "li",
-                  null,
-                  "HEllo"
-                )
-              )
-            )
-          )
         )
       );
     }

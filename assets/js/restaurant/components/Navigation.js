@@ -34,7 +34,7 @@ export default class Navigation extends Component {
 
           <label
             htmlFor="menuToggle"
-            className="hamburger pull-right visible-xs"
+            className="pull-right visible-xs"
           >
             <i
               style={{ fontSize: "25px", display: "block", float: "right" }}
